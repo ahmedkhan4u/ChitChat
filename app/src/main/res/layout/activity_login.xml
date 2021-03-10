@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@color/darkBlue"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Login"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="cursive"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/icon_email"
+                android:drawablePadding="10dp"
+                android:hint="Enter Your Email"
+                android:textSize="16dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/edt_login_email"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/password_icon"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:hint="Enter Your Password"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/edt_login_password"
+                android:inputType="textPassword"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:id="@+id/btn_login"
+                android:paddingEnd="16dp"
+                android:drawableRight="@drawable/icon_signup"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/button_background"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorBlack"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account | Signup"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/txt_register_login"
+            android:onClick="TextClick"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
